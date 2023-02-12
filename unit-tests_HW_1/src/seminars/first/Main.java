@@ -36,38 +36,10 @@ public class Main {
 //        Hero emmett = new Hero("Emmett", 50, "sword", heroBag, true);
 //        checkingHero(emmett);
 
-        /** ДЗ. */
-        List<Product> foodBasket = new ArrayList<>();
-        fillFoodBasket(foodBasket); // заполнение корзины
 
-        Shop myShop = new Shop();
-        myShop.setProducts(foodBasket); // добавление корзины в магазин
-
-        ShopTest.checkExpensiveProduct(myShop.getMostExpensiveProduct()); // проверка что магазин возвращает верный самый дорогой продукт
-        ShopTest.checkBaskin(myShop); // проверка корзины
-
-        myShop.getSortedListProducts(); //сортировка
-        ShopTest.checkSortBaskin(myShop); // проверка работы сортировки
 
     }
 
-    /**
-     * для ДЗ
-     */
-    public static void fillFoodBasket(List<Product> basket) { // наполнение корзины
-        Product milk32 = new Product();
-        milk32.setCost(50);
-        milk32.setTitle("milk 3,2");
-        basket.add(milk32);
-        Product coffee = new Product();
-        coffee.setCost(150);
-        coffee.setTitle("ground coffee");
-        basket.add(coffee);
-        Product sugar = new Product();
-        sugar.setCost(15);
-        sugar.setTitle("cane sugar");
-        basket.add(sugar);
-    }
 
     /**
      * 1) Нужно найти и исправить ошибку в условиях assert
