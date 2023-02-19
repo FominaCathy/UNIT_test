@@ -1,4 +1,6 @@
 import seminars.first.model.Calculator;
+import org.junit.jupiter.api.*;
+
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
